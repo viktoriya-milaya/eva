@@ -1,8 +1,9 @@
 @import "reset";
 @import "vars";
 @import "header";
+@import "mainScreen";
 
-// @import "nav";
+
 // @import "button";
 // @import "list";
 // @import "search";
@@ -16,22 +17,35 @@ body {
     min-height: 100vh;
     scroll-behavior: smooth;
     text-rendering: optimizeSpeed;
-    font-family: "Roboto", sans-serif ;
+    font-family: "Roboto", sans-serif;
     background: $white;
-    color: $black;
-    
-  }
 
-.wrap{
-    max-width: 1280px;
+}
+
+.wrap {
+    max-width: 1400px;
+    padding: 0 60px;
     margin: 0 auto
 }
 
-h1{
-    background: $main-gradient;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: #B8005F;
-    display: table;
+.heading {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 59px;
 }
 
+.content {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.button {
+    padding: 15px 36px;
+    border-radius: 7px;
+    border: none;
+    background: $main-gradient;
+    color: $white;
+    font-weight: 900;
+    font-size: 20px;
+}

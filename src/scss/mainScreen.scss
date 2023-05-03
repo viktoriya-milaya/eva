@@ -1,0 +1,100 @@
+@import "vars";
+
+.main-screen {
+    position: relative;
+
+    &__offer {
+        padding: 130px 0;
+
+        .first-heading {
+            max-width: 600px;
+            font-size: 50px;
+            line-height: 59px;
+        }
+
+        .brief {
+            font-size: 24px;
+            line-height: 28px;
+            padding: 10px 0 20px;
+        }
+    }
+
+    &__img {
+        position: absolute;
+        top: 0;
+        right: 33px;
+
+        &_lower {
+            top: -8px;
+            right: 0;
+        }
+    }
+
+    &__svg{
+        top: 87px;
+        left: -20px;
+    }
+}
+
+
+// .header-top {
+//     padding: 30px 0;
+//     background: $main-gradient;
+//     color: $white;
+//     font-weight: 500;
+//     font-size: 14px;
+//     line-height: 10px;
+
+
+//     .header-list {
+//         display: flex;
+//         justify-content: space-between;
+
+//         &__item {
+//             display: flex;
+//             justify-content: space-between;
+//             gap: 15px;
+//         }
+
+//         .phone-list {
+//             display: flex;
+//             justify-content: space-between;
+//             gap: 15px;
+//         }
+//     }
+// }
+
+// .header-bottom {
+//     padding: 45px 0;
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+
+//     .logo {
+//         display: flex;
+//         align-items: center;
+//         gap: 10px;
+
+//         &__text {
+//             font-style: italic;
+//             font-weight: 900;
+//             font-size: 36px;
+//             line-height: 42px;
+//             color: $black;
+//         }
+//     }
+
+//     .nav {
+//         .nav-list {
+//             display: flex;
+//             gap: 25px;
+//         }
+
+//         &__link {
+//             font-weight: 300;
+//             font-size: 18px;
+//             line-height: 21px;
+//             color: $gray;
+//         }
+//     }
+// }

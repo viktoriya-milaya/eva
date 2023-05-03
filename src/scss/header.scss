@@ -4,23 +4,63 @@
 .header-top {
     padding: 30px 0;
     background: $main-gradient;
+    color: $white;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 10px;
+
+
+    .header-list {
+        display: flex;
+        justify-content: space-between;
+        
+        &__item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .phone-list {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 15px;
+        }
+    }
 }
 
-.header-list {
+.header-bottom {
+    padding: 45px 0;
     display: flex;
+    align-items: center;
     justify-content: space-between;
 
-
-    &__item {
+    .logo {
         display: flex;
-        justify-content: space-between;
-        gap: 16px;
+        align-items: center;
+        gap: 10px;
+
+        &__text {
+            font-style: italic;
+            font-weight: 900;
+            font-size: 36px;
+            line-height: 42px;
+            color: $black;
+        }
     }
 
-    .phone-list {
-        display: flex;
-        justify-content: space-between;
-        gap: 16px;
-    }
+    .nav {
+        .nav-list {
+            display: flex;
+            gap: 25px;
+        }
 
+        &__link {
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 21px;
+            color: $gray;
+        }
+    }
 }
