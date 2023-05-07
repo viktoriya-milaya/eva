@@ -6,8 +6,8 @@
     top: 0;
     width: 100%;
     height: 100vh;
-    // display: flex;
-    display: none;
+    display: flex;
+    // display: none;
     justify-content: center;
     align-items: center;
     background: $light-white;
@@ -31,6 +31,11 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+
+            input[placeholder] {
+                text-overflow: ellipsis;
+            }
+
 
 
             &-heading {
@@ -126,5 +131,111 @@
 
 .select {
     padding: 20px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+@media (max-width: 1280px) {
+    .modal {
+        &__content {
+            max-width: 940px;
+        }
+    }
+
+}
+
+@media (max-width: 1020px) {
+
+    .modal {
+
+        &__content {
+            max-width: 700px;
+            padding: 40px 0;
+
+            .form {
+
+                .row {
+                    display: flex;
+                    width: 600px;
+                }
+
+                .input-content {
+                    width: 290px;
+
+                    &_long {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 770px) {
+
+    .modal {
+
+        &__content {
+            max-width: 460px;
+            padding: 40px 0;
+
+            .form {
+
+                .row {
+                    display: flex;
+                    flex-wrap: wrap;
+                    width: 360px;
+                    gap: 20px;
+
+                }
+
+                .input-content {
+                    width: 100%;
+
+                    &_long {
+                        width: 100%;
+                    }
+                }
+
+            }
+        }
+
+    }
+
+}
+
+@media (max-width: 560px) {
+
+    .modal {
+
+        &__content {
+            max-width: 320px;
+            padding: 0 0 40px;
+
+            .form {
+
+                .row {
+                    width: 260px;
+                    gap: 20px;
+                }
+
+                .input-content {
+                    width: 100%;
+
+                    &_long {
+                        width: 100%;
+                    }
+
+
+                }
+
+            }
+        }
+
+    }
 
 }

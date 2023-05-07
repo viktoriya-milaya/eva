@@ -19,7 +19,7 @@
         align-items: flex-start;
         gap: 30px;
 
-        
+
 
         &__item {
             display: flex;
@@ -32,11 +32,10 @@
             background: $white;
             border-radius: 9px;
             box-shadow: 0px 0px 40px rgba(184, 0, 95, 0.2);
-            // flex-grow: 1;
-            // flex: 0 0 calc(33.33% - (60px / 3));
+
         }
 
-        .title_pink{
+        .title_pink {
             color: $pink;
         }
 
@@ -45,5 +44,28 @@
     .button {
         display: block;
         margin: 0 auto;
+    }
+}
+
+@media (max-width: 1020px) {
+
+    .products {
+        .products-list {
+            
+            flex-direction: column;
+            align-items: center;
+
+            &__item {
+                max-width: 594px;
+                width: 100%;
+            }
+
+            &__img {
+                transform: rotateZ(90deg);
+                margin: -60px auto;
+            }
+
+
+        }
     }
 }

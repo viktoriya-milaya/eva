@@ -44,9 +44,34 @@
                 margin: 36px 0 9px;
                 background: $main-gradient;
             }
-
-
         }
     }
+}
+
+@media (max-width: 1020px) {
+
+    .comments {
+       
+        .comments-list {
+            flex-direction: column;
+            align-items: center;
+            gap: 110px;
+    
+    
+            &__item {
+                max-width: 534px;
+                width: 100%;
+    
+                .content {
+                 text-align: center;
+                }
+        
+                .line {
+                    margin: 25px 0 9px;
+                }
+            }
+        }
+    }
+
 
 }
