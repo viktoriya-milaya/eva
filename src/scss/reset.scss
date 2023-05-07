@@ -50,6 +50,9 @@ img {
 input,
 button,
 textarea,
+option,
 select {
   font: inherit;
+  outline: none;
+  color: inherit;
 }

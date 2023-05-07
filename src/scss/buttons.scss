@@ -1,0 +1,41 @@
+@import "vars";
+
+
+
+.button {
+    padding: 15px 36px;
+    border-radius: 7px;
+    border: none;
+    background: $main-gradient;
+    color: $white;
+    font-weight: 900;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.button:hover {
+    color: $black;
+    transition: all 0.2s ease-out 0.1s;
+}
+
+
+.button_light{
+    background: none;
+    border: solid 1px $pink;
+    color: $pink;
+}
+
+.button_light:hover{
+    background: $main-gradient;
+    color: $white;
+}
+
+
+.burger{
+    border: solid 1px $pink;
+    padding: 6px 8px;
+    color: $pink;
+    border-radius: 4px;
+    background: none;
+}
+

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>EVA-коврики Беларусь</title>
     <link rel="stylesheet" href="scss/main.scss">
 </head>
 
@@ -38,7 +38,7 @@
                             d="M4.8 0C2.14857 0 0 2.19029 0 4.8932C0 10.7961 4.8 16 4.8 16C4.8 16 9.6 10.7184 9.6 4.8932C9.6 2.19029 7.45143 0 4.8 0ZM4.8 7.53398C3.36762 7.53398 2.20952 6.3534 2.20952 4.8932C2.20952 3.43301 3.36762 2.25243 4.8 2.25243C6.23238 2.25243 7.39048 3.43301 7.39048 4.8932C7.39048 6.3534 6.23238 7.53398 4.8 7.53398Z"
                             fill="white" />
                     </svg>
-                    <span>Новополоцк</span>
+                    <span>БЕЛАРУСЬ</span>
                 </li>
                 <li class="header-list__item">
                     <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -52,14 +52,18 @@
                             d="M13.0195 2.67751C13.619 2.66175 14.119 3.12514 14.1389 3.71777C14.1555 4.26943 13.6554 4.75803 13.0659 4.77064C12.4532 4.78325 11.9465 4.32617 11.93 3.74614C11.9167 3.17243 12.4035 2.69328 13.0195 2.67751Z"
                             fill="white" />
                     </svg>
-
-                    <span>посетите нашу страницу</span>
+                    <a href="#" target="_blank" class="link">
+                        <span>посетите нашу страницу</span>
+                    </a>
+                </li>
+                <li class="header-list__item burger-menu">
+                    <button class="burger">☰</button>
                 </li>
             </ul>
         </div>
 
         <div class="wrap">
-            <div class="header-bottom">
+            <div class="header-bottom" id="home">
                 <a href="#home" class="logo">
                     <svg width="101" height="60" viewBox="0 0 101 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -78,26 +82,40 @@
                 <nav class="nav">
                     <ul class="nav-list">
                         <li class="nav-list__item">
-                            <a href="#comments" class="link nav__link">отзывы</a>
+                            <a href="#about" class="link nav__link">что это?</a>
                         </li>
-                        <li class="nav-list__item"><a href="#about" class="link nav__link">что это?</a></li>
+                        <li class="nav-list__item"><a href="#comments" class="link nav__link">отзывы</a></li>
                         <li class="nav-list__item"><a href="#contacts" class="link nav__link">контакты</a></li>
                     </ul>
                 </nav>
+
             </div>
         </div>
+
+        <nav class=" mobile-nav ">
+            <ul class="nav-list wrap">
+                <li class="nav-list__item">
+                    <a href="#about" class="link nav__link">что это?</a>
+                </li>
+                <li class="nav-list__item"><a href="#comments" class="link nav__link">отзывы</a></li>
+                <li class="nav-list__item"><a href="#contacts" class="link nav__link">контакты</a>
+                </li>
+            </ul>
+        </nav>
+
     </header>
     <main class="main">
         <section class="wrap main-screen">
             <div class="main-screen__offer">
                 <h1 class="heading first-heading">Инновационные коврики
                     для автомобиля</h1>
-                <p class="content brief">в Новополоцке</p>
+                <p class="content brief">вся БЕЛАРУСЬ</p>
                 <button class="button">ЗАКАЗАТЬ</button>
             </div>
-            <img class="main-screen__img" src="assets/main-img.png" alt="Илюстрация ева-ковриков">
-            <img class="main-screen__img main-screen__img_lower" src="assets/main-mount.png" alt="#">
-            <svg class="main-screen__img main-screen__svg" width="397" height="473" viewBox="0 0 397 473" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <img class="main-screen__img" src="assets/main-screen/main-img.png" alt="Илюстрация ева-ковриков">
+            <img class="main-screen__img main-screen__img_lower" src="assets/main-screen/main-mount.png" alt="#">
+            <svg class="main-screen__img main-screen__svg" width="397" height="473" viewBox="0 0 397 473" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_17_12)">
                     <path opacity="0.0946098"
                         d="M78.8773 400.618L50.4423 386.777C48.7106 385.918 46.5819 386.076 44.9354 387.168L18.5101 404.904C16.8636 405.995 15.9659 407.891 16.0512 409.841L18.0609 441.419C18.1806 443.415 19.3771 445.107 21.1088 445.965L49.5439 459.806C51.2755 460.665 53.4043 460.507 55.0507 459.416L81.476 441.679C83.1225 440.588 84.0202 438.692 83.935 436.742L81.9252 405.164C81.84 403.214 80.6899 401.488 78.8773 400.618Z"
@@ -171,8 +189,304 @@
             </svg>
         </section>
 
+        <section class="wrap">
+            <div class="section about" id="about">
+                <h2 class="heading second-heading">Что такое <span class="gradient-text">EVA</span> коврики?</h2>
+                <ul class="about-list">
+                    <li class="about-list__item">
+                        <img class="about-list__img" src="assets/about/material.jpg" alt="eva-material" class="img">
+                        <p class="title">МАТЕРИАЛ</p>
+                        <p class="content">Коврики EVA всесезонные и отличаются уникальной поверхностью материала с
+                            ячейками
+                            ромбовидной формы. Из-за чего вода не проливается при изъятии ковра и не плещется при езде.
+                            Коврики воду не пропускают.</p>
+                    </li>
+                    <li class="about-list__item">
+                        <img class="about-list__img" src="assets/about/difference.jpg" alt="eva-difference" class="img">
+                        <p class="title">ОТЛИЧИЯ</p>
+                        <p class="content">Резиновые коврики загибаются и лезут на педали. EVA коврики такого не
+                            допустят!
+                            Специальные липучки держат его в одном положении. При желании, для водителя устанавливается
+                            подпятник из рельефного алюминия.</p>
+                    </li>
+                    <li class="about-list__item">
+                        <img class="about-list__img" src="assets/about/colors.jpg" alt="eva-color" class="img">
+                        <p class="title">РАСЦВЕТКА</p>
+                        <p class="content">Автомобильные коврики EVA можно заказать и в индивидуальных размерах и в
+                            разных
+                            цветах, которые комбинируется на выбор покупателя с такими же цветами окантовочной
+                            полипропиленовой ременной ленты.</p>
+                    </li>
+                </ul>
+                <svg class="about__svg" width="757" height="581" viewBox="0 0 757 581" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.0946098"
+                        d="M757 393.249V280.751C757 273.763 753.298 267.32 747.275 263.851L650.225 207.602C644.202 204.133 636.798 204.133 630.775 207.602L533.725 263.851C527.702 267.32 524 273.812 524 280.751V393.249C524 400.237 527.702 406.68 533.725 410.149L630.775 466.398C636.798 469.867 644.202 469.867 650.225 466.398L747.275 410.149C753.248 406.68 757 400.188 757 393.249Z"
+                        fill="url(#paint0_linear_34_208)" />
+                    <path opacity="0.0946098"
+                        d="M454 491.872V545.128C454 548.445 455.77 551.464 458.573 553.147L504.402 579.775C507.254 581.408 510.746 581.408 513.598 579.775L559.427 553.147C562.279 551.513 564 548.445 564 545.128V491.872C564 488.555 562.23 485.536 559.427 483.853L513.598 457.225C510.746 455.592 507.254 455.592 504.402 457.225L458.573 483.853C455.77 485.487 454 488.555 454 491.872Z"
+                        fill="url(#paint1_linear_34_208)" />
+                    <path opacity="0.0946098"
+                        d="M481 387.178V155.822C481 141.489 473.34 128.194 460.936 121.028L260.589 5.37489C248.135 -1.79163 232.815 -1.79163 220.411 5.37489L20.0643 121.028C7.66002 128.244 0 141.489 0 155.822V387.178C0 401.511 7.66002 414.806 20.0643 421.972L220.411 537.625C232.815 544.792 248.135 544.792 260.589 537.625L460.936 421.972C473.34 414.806 481 401.511 481 387.178Z"
+                        fill="url(#paint2_linear_34_208)" />
+                    <defs>
+                        <linearGradient id="paint0_linear_34_208" x1="640.453" y1="204.911" x2="640.453" y2="469.023"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#D4145A" />
+                            <stop offset="1" stop-color="#2E3192" />
+                        </linearGradient>
+                        <linearGradient id="paint1_linear_34_208" x1="509.015" y1="581" x2="509.015" y2="455.982"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#D4145A" />
+                            <stop offset="1" stop-color="#2E3192" />
+                        </linearGradient>
+                        <linearGradient id="paint2_linear_34_208" x1="240.49" y1="0.00627689" x2="240.49" y2="543.02"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#D4145A" />
+                            <stop offset="1" stop-color="#2E3192" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+        </section>
+
+        <section class="wrap">
+            <div class="section products">
+                <h2 class="heading second-heading">Мы предлагаем Вам</h2>
+                <ul class="products-list">
+                    <li class="products-list__item">
+                        <p class="title title_pink">Cалон</p>
+                        <img class="products-list__img" src="assets/products/option-1.jpg" alt="eva-коврик" class="img">
+                        <p class="title">от 115 BYN</p>
+                        <button class="button button_light">ЗАКАЗАТЬ</button>
+                    </li>
+                    <li class="products-list__item">
+                        <p class="title title_pink">Cалон + </p>
+                        <img class="products-list__img" src="assets/products/option-2.png" alt="eva-коврик" class="img">
+                        <p class="title">от 125 BYN</p>
+                        <button class="button button_light">ЗАКАЗАТЬ</button>
+                    </li>
+                    <li class="products-list__item">
+                        <p class="title title_pink">Салон F+</p>
+                        <img class="products-list__img" src="assets/products/option-3.png" alt="eva-коврик" class="img">
+                        <p class="title">от 210 BYN</p>
+                        <button class="button button_light">ЗАКАЗАТЬ</button>
+                    </li>
+                </ul>
+
+                <button class="button">ПОКАЗАТЬ ЕЩЕ ВАРИАНТЫ</button>
+
+                <svg class="products__svg" width="757" height="581" viewBox="0 0 757 581" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.0946098"
+                        d="M4.29153e-06 187.751L4.29153e-06 300.249C4.29153e-06 307.237 3.70231 313.68 9.72477 317.149L106.775 373.398C112.798 376.867 120.202 376.867 126.225 373.398L223.275 317.149C229.298 313.68 233 307.188 233 300.249L233 187.751C233 180.763 229.298 174.32 223.275 170.851L126.225 114.602C120.202 111.133 112.798 111.133 106.775 114.602L9.72477 170.851C3.75167 174.32 4.29153e-06 180.812 4.29153e-06 187.751Z"
+                        fill="url(#paint0_linear_33_202)" />
+                    <path opacity="0.0946098"
+                        d="M303 89.1284V35.8716C303 32.5554 301.23 29.5362 298.427 27.8534L252.598 1.225C249.746 -0.408339 246.254 -0.408339 243.402 1.225L197.573 27.8534C194.721 29.4867 193 32.5554 193 35.8716L193 89.1284C193 92.4446 194.77 95.4638 197.573 97.1466L243.402 123.775C246.254 125.408 249.746 125.408 252.598 123.775L298.427 97.1466C301.23 95.5133 303 92.4446 303 89.1284Z"
+                        fill="url(#paint1_linear_33_202)" />
+                    <path opacity="0.0946098"
+                        d="M276 193.822L276 425.178C276 439.511 283.66 452.806 296.064 459.972L496.411 575.625C508.865 582.792 524.185 582.792 536.589 575.625L736.936 459.972C749.34 452.756 757 439.511 757 425.178L757 193.822C757 179.489 749.34 166.194 736.936 159.028L536.589 43.3749C524.185 36.2084 508.865 36.2084 496.411 43.3749L296.064 159.028C283.66 166.194 276 179.489 276 193.822Z"
+                        fill="url(#paint2_linear_33_202)" />
+                    <defs>
+                        <linearGradient id="paint0_linear_33_202" x1="116.547" y1="376.089" x2="116.547" y2="111.977"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#D4145A" />
+                            <stop offset="1" stop-color="#2E3192" />
+                        </linearGradient>
+                        <linearGradient id="paint1_linear_33_202" x1="247.985" y1="0.000342776" x2="247.985"
+                            y2="125.018" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#D4145A" />
+                            <stop offset="1" stop-color="#2E3192" />
+                        </linearGradient>
+                        <linearGradient id="paint2_linear_33_202" x1="516.51" y1="580.994" x2="516.51" y2="37.98"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#D4145A" />
+                            <stop offset="1" stop-color="#2E3192" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+        </section>
+
+        <section class="comments" id="comments">
+            <!-- <div class="wrap"> -->
+                <ul class="comments-list wrap">
+                    <li class="comments-list__item">
+                        <img src="assets/comments/photo-comment-1.jpg" alt="фото клиента" class="comment-img">
+                        <p class="content">Коврики супер!!! Качество на высшем уровне!!!
+                            Удачи и побольше заказов вам!!! Большое спасибо!</p>
+                        <div class="line"></div>
+                        <p class="content content_light">Константин В.</p>
+                    </li>
+                    <li class="comments-list__item">
+                        <img src="assets/comments/photo-comment-2.jpg" alt="фото клиента" class="comment-img">
+                        <p class="content">Покупала у ребят коврики для Хундай солярис в подарок молодому человеку. Все
+                            очень понравилось.</p>
+                        <div class="line"></div>
+                        <p class="content content_light">Вера К.</p>
+                    </li>
+                    <li class="comments-list__item">
+                        <img src="assets/comments/photo-comment-3.jpg" alt="фото клиента" class="comment-img">
+                        <p class="content">Спасибо, все приехало, поставил. Результатом доволен, в машине супер!
+                            Заказывал
+                            на Ниссан.</p>
+                        <div class="line"></div>
+                        <p class="content content_light">Николай П.</p>
+                    </li>
+                </ul>
+            <!-- </div> -->
+
+        </section>
+
+        <div class="modal" id="modal">
+            <div class="modal__content">
+                <form class="form">
+                    <p class="heading form-heading">ФОРМА ЗАЯВКИ</p>
+                    <div class="row">
+                        <input type="text" class="input-content" id="name" placeholder="Ваше имя">
+                        <input type="tel" class="input-content" id="phone" placeholder="+375(XX) XXX XX XX">
+                    </div>
+                    <div class="row">
+                        <input type="text" class="input-content input-content_long" id="info"
+                            placeholder="Ваше сообщение (марка автомобиля, индивидуальное изделие)">
+                    </div>
+
+                    <div class="colors">
+                        <p class="content content_big">ВАРИАНТЫ РАСЦВЕТКИ</p>
+                        <ul class="colors-list">
+                            <li class="colors-list__item">
+                                <div class="round round_black"></div>
+                            </li>
+                            <li class="colors-list__item">
+                                <div class="round round_white"></div>
+                            </li>
+                            <li class="colors-list__item">
+                                <div class="round round_gray"></div>
+                            </li>
+                            <li class="colors-list__item">
+                                <div class="round round_brown"></div>
+                            </li>
+                            <li class="colors-list__item">
+                                <div class="round round_blue"></div>
+                            </li>
+                            <li class="colors-list__item">
+                                <div class="round round_green"></div>
+                            </li>
+                            <li class="colors-list__item">
+                                <div class="round round_red"></div>
+                            </li>
+                            <li class="colors-list__item">
+                                <div class="round round_yellow"></div>
+                            </li>
+
+                            <li class="colors-list__item">
+                                <div class="round round_orange"></div>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="row select">
+                        <section>
+                            <label class="select-label">Форма ячеек:</label>
+                            <select class="select-form">
+                                <option value="rhombus">Ромб ⬥</option>
+                                <option value="honeycomb">Соты &#11042;</option>
+                            </select>
+                        </section>
+
+                        <section>
+                            <label class="select-label">Цвет изделия:</label>
+                            <select class="select-color">
+                                <option value="black">Черный</option>
+                                <option value="white">Белый</option>
+                                <option value="red">Красный</option>
+                                <option value="yellow">Желтый</option>
+                                <option value="blue">Синий</option>
+                                <option value="green">Зеленый</option>
+                                <option value="orange">Оранжевый</option>
+                                <option value="violet ">Фиолетовый</option>
+                                <option value="gray">Серый</option>
+                                <option value="brown ">Коричневый</option>
+                            </select>
+                        </section>
+
+                        <section>
+                            <label class="select-label">Цвет окантовки:</label>
+                            <select class="select-color">
+                                <option value="black">Черный</option>
+                                <option value="white">Белый</option>
+                                <option value="red">Красный</option>
+                                <option value="yellow">Желтый</option>
+                                <option value="blue">Синий</option>
+                                <option value="green">Зеленый</option>
+                                <option value="orange">Оранжевый</option>
+                                <option value="violet ">Фиолетовый</option>
+                                <option value="gray">Серый</option>
+                                <option value="brown ">Коричневый</option>
+                            </select>
+                        </section>
+                    </div>
+                    <button type="submit" class="button" id="submit">ОТПРАВИТЬ</button>
+                </form>
+
+            </div>
+        </div>
     </main>
-    <footer class="footer">
+
+    <footer class="footer wrap" id="contacts">
+        <ul class="footer-list">
+            <li class="footer-list__item">
+                <p class="content_big">МЫ В СОЦИАЛЬНЫХ СЕТЯХ</p>
+                <a href="#" target="_blank">
+                    <img src="assets/footer/instagram-footer.png" alt="instagram-icon">
+                </a>
+            </li>
+            <li class="footer-list__item">
+                <p class="content_big">КОНТАКТНЫЕ ТЕЛЕФОНЫ</p>
+                <ul class="text-list content">
+                    <li class="text-list__item">+375 29 292-29-29 (VEL)</li>
+                    <li class="text-list__item">+375 33 333-33-33 (МТС)</li>
+                </ul>
+            </li>
+            <li class="footer-list__item">
+                <p class="content_big">О НАС</p>
+                <ul class="text-list content">
+                    <li class="text-list__item">Индивидуальное изготовление EVA ковриков для вашего автомобиля. </li>
+                    <li class="text-list__item">Отправка в любую точку Беларуси</li>
+                </ul>
+            </li>
+
+        </ul>
+        <svg class="footer__svg" width="1233" height="222" viewBox="0 0 1233 222" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path opacity="0.0946098"
+                d="M755 119.319V180.681C755 184.493 757.05 188.007 760.384 189.899L814.116 220.581C817.45 222.473 821.55 222.473 824.884 220.581L878.616 189.899C881.95 188.007 884 184.466 884 180.681V119.319C884 115.507 881.95 111.993 878.616 110.101L824.884 79.4192C821.55 77.5269 817.45 77.5269 814.116 79.4192L760.384 110.101C757.077 111.993 755 115.534 755 119.319Z"
+                fill="url(#paint0_linear_32_99)" />
+            <path opacity="0.0946098"
+                d="M-3.15905e-06 63.9351L-3.15905e-06 141.065C-3.15905e-06 145.856 2.66947 150.273 7.01184 152.651L76.9881 191.216C81.3305 193.595 86.6695 193.595 91.0118 191.216L160.988 152.651C165.33 150.273 168 145.822 168 141.065L168 63.9351C168 59.1442 165.33 54.7271 160.988 52.3487L91.0118 13.7838C86.6695 11.4054 81.3305 11.4054 76.9881 13.7838L7.01184 52.3487C2.70506 54.7271 -3.15905e-06 59.1782 -3.15905e-06 63.9351Z"
+                fill="url(#paint1_linear_32_99)" />
+            <path opacity="0.0946098"
+                d="M1233 89.1284V35.8716C1233 32.5554 1231.23 29.5362 1228.43 27.8534L1182.6 1.225C1179.75 -0.408339 1176.25 -0.408339 1173.4 1.225L1127.57 27.8534C1124.72 29.4867 1123 32.5554 1123 35.8716V89.1284C1123 92.4446 1124.77 95.4638 1127.57 97.1466L1173.4 123.775C1176.25 125.408 1179.75 125.408 1182.6 123.775L1228.43 97.1466C1231.23 95.5133 1233 92.4446 1233 89.1284Z"
+                fill="url(#paint2_linear_32_99)" />
+            <defs>
+                <linearGradient id="paint0_linear_32_99" x1="819.526" y1="222.049" x2="819.526" y2="77.9876"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#D4145A" />
+                    <stop offset="1" stop-color="#2E3192" />
+                </linearGradient>
+                <linearGradient id="paint1_linear_32_99" x1="84.0336" y1="193.061" x2="84.0336" y2="11.9844"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#D4145A" />
+                    <stop offset="1" stop-color="#2E3192" />
+                </linearGradient>
+                <linearGradient id="paint2_linear_32_99" x1="1177.99" y1="0.000342776" x2="1177.99" y2="125.018"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#D4145A" />
+                    <stop offset="1" stop-color="#2E3192" />
+                </linearGradient>
+            </defs>
+        </svg>
 
     </footer>
 
