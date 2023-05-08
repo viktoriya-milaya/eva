@@ -1,0 +1,23 @@
+
+
+[
+       {
+        "id": 4,
+        "title": "Багажник",
+        "price": 90,
+        "src": "option-5.png"
+    },
+
+    {
+        "id": 5,
+        "title": "Один коврик",
+        "price": 50,
+        "src": "./option-5.png"
+    },
+    {
+        "id": 6,
+        "title": "Индивидуально",
+        "price": 50,
+        "src": "../assest/products/option-6.png"
+    }
+]

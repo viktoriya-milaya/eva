@@ -1,0 +1,70 @@
+@import "vars";
+
+.preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    background: $black;
+    z-index: 1000;
+
+    &__img {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        width: 70px;
+        height: 70px;
+        margin-top: -35px;
+        margin-left: -35px;
+        text-align: center;
+        animation: fade-in 0.3s ease-in-out;
+    }
+}
+
+
+.loaded_hiding {
+    .preloader {
+        transition: 0.3s opacity;
+        opacity: 0;
+    }
+}
+
+.loaded {
+    .preloader {
+        display: none;
+    }
+}
+
+
+/*animation*/
+
+.fade-in {
+    animation: fade-in 0.5s ease-in-out;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+.fade-out {
+    animation: fade-out 0.5s ease-in-out;
+}
+
+@keyframes fade-out {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}

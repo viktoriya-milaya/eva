@@ -1,4 +1,5 @@
 @import "reset";
+@import "preloader";
 @import "vars";
 @import "header";
 @import "buttons";
@@ -71,7 +72,7 @@ body {
 }
 
 .gradient-text {
-    background-color: #B8005F;
+    background-color: $pink;
     background-image: $main-gradient;
     background-clip: text;
     -webkit-text-fill-color: transparent;

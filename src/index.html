@@ -10,6 +10,30 @@
 </head>
 
 <body>
+
+    <!-- preloader  -->
+
+  <div class="preloader">
+    <svg class="preloader__img" role="img" width="44" height="44" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg"
+      stroke="#fff">
+      <g fill="none" fill-rule="evenodd" stroke-width="2">
+        <circle cx="22" cy="22" r="1">
+          <animate attributeName="r" begin="0s" dur="1.8s" values="1; 20" calcMode="spline" keyTimes="0; 1"
+            keySplines="0.165, 0.84, 0.44, 1" repeatCount="indefinite" />
+          <animate attributeName="stroke-opacity" begin="0s" dur="1.8s" values="1; 0" calcMode="spline" keyTimes="0; 1"
+            keySplines="0.3, 0.61, 0.355, 1" repeatCount="indefinite" />
+        </circle>
+        <circle cx="22" cy="22" r="1">
+          <animate attributeName="r" begin="-0.9s" dur="1.8s" values="1; 20" calcMode="spline" keyTimes="0; 1"
+            keySplines="0.165, 0.84, 0.44, 1" repeatCount="indefinite" />
+          <animate attributeName="stroke-opacity" begin="-0.9s" dur="1.8s" values="1; 0" calcMode="spline"
+            keyTimes="0; 1" keySplines="0.3, 0.61, 0.355, 1" repeatCount="indefinite" />
+        </circle>
+      </g>
+    </svg>
+  </div>
+
+
     <header class="header">
         <div class="header-top">
             <ul class="wrap header-list">
@@ -38,7 +62,7 @@
                             d="M4.8 0C2.14857 0 0 2.19029 0 4.8932C0 10.7961 4.8 16 4.8 16C4.8 16 9.6 10.7184 9.6 4.8932C9.6 2.19029 7.45143 0 4.8 0ZM4.8 7.53398C3.36762 7.53398 2.20952 6.3534 2.20952 4.8932C2.20952 3.43301 3.36762 2.25243 4.8 2.25243C6.23238 2.25243 7.39048 3.43301 7.39048 4.8932C7.39048 6.3534 6.23238 7.53398 4.8 7.53398Z"
                             fill="white" />
                     </svg>
-                    <span>БЕЛАРУСЬ</span>
+                    <span class="city"></span>
                 </li>
                 <li class="header-list__item inst">
                     <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -52,7 +76,7 @@
                             d="M13.0195 2.67751C13.619 2.66175 14.119 3.12514 14.1389 3.71777C14.1555 4.26943 13.6554 4.75803 13.0659 4.77064C12.4532 4.78325 11.9465 4.32617 11.93 3.74614C11.9167 3.17243 12.4035 2.69328 13.0195 2.67751Z"
                             fill="white" />
                     </svg>
-                    <a href="#" target="_blank" class="link">
+                    <a href="https://www.instagram.com/evakovrikby/" target="_blank" class="link">
                         <span>посетите нашу страницу</span>
                     </a>
                 </li>
@@ -92,7 +116,7 @@
             </div>
         </div>
 
-        <nav class=" mobile-nav ">
+        <nav class=" mobile-nav">
             <ul class="nav-list wrap">
                 <li class="nav-list__item">
                     <a href="#about" class="link nav__link">что это?</a>
@@ -109,8 +133,8 @@
             <div class="main-screen__offer">
                 <h1 class="heading first-heading">Инновационные коврики
                     для автомобиля</h1>
-                <p class="content brief">вся БЕЛАРУСЬ</p>
-                <button class="button">ЗАКАЗАТЬ</button>
+                <p class="content brief city"></p>
+                <button class="button action">ЗАКАЗАТЬ</button>
             </div>
             <img class="main-screen__img main-img" src="assets/main-screen/main-img.png" alt="Илюстрация ева-ковриков">
             <img class="main-screen__img main-screen__img_lower" src="assets/main-screen/main-mount.png" alt="#">
@@ -258,23 +282,23 @@
                         <p class="title title_pink">Cалон</p>
                         <img class="products-list__img" src="assets/products/option-1.jpg" alt="eva-коврик" class="img">                      
                         <p class="title">от 115 BYN</p>
-                        <button class="button button_light">ЗАКАЗАТЬ</button>
+                        <button class="button button_light action">ЗАКАЗАТЬ</button>
                     </li>
                     <li class="products-list__item">
                         <p class="title title_pink">Cалон + </p>
                         <img class="products-list__img" src="assets/products/option-2.png" alt="eva-коврик" class="img">
                         <p class="title">от 125 BYN</p>
-                        <button class="button button_light">ЗАКАЗАТЬ</button>
+                        <button class="button button_light action">ЗАКАЗАТЬ</button>
                     </li>
                     <li class="products-list__item">
-                        <p class="title title_pink">Салон F+</p>
+                        <p class="title title_pink">Салон FULL +</p>
                         <img class="products-list__img" src="assets/products/option-3.png" alt="eva-коврик" class="img">
                         <p class="title">от 210 BYN</p>
-                        <button class="button button_light">ЗАКАЗАТЬ</button>
+                        <button class="button button_light action">ЗАКАЗАТЬ</button>
                     </li>
                 </ul>
 
-                <button class="button">ПОКАЗАТЬ ЕЩЕ ВАРИАНТЫ</button>
+                <!-- <button class="button">ПОКАЗАТЬ ЕЩЕ ВАРИАНТЫ</button> -->
 
                 <svg class="products__svg" width="757" height="581" viewBox="0 0 757 581" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -363,8 +387,11 @@
 
         </section>
 
+        <!-- modal -->
+
         <div class="modal" id="modal">
             <div class="modal__content">
+                <button class="button button_light close">&#215;</button>
                 <form class="form">
                     <p class="heading form-heading">ФОРМА ЗАЯВКИ</p>
                     <div class="row">
@@ -373,7 +400,7 @@
                     </div>
                     <div class="row">
                         <input type="text" required class="input-content input-content_long" id="info"
-                            placeholder="Ваше сообщение (марка автомобиля, индивидуальное изделие)">
+                            placeholder="Ваше сообщение (марка автомобиля,пожелания)">
                     </div>
 
                     <div class="colors">
@@ -459,11 +486,13 @@
         </div>
     </main>
 
+    <!-- footer  -->
+
     <footer class="footer wrap" id="contacts">
         <ul class="footer-list">
             <li class="footer-list__item">
                 <p class="content_big">МЫ В СОЦИАЛЬНЫХ СЕТЯХ</p>
-                <a href="#" target="_blank" class="footer-icon">
+                <a href="https://www.instagram.com/evakovrikby/" target="_blank" class="footer-icon">
                     <img src="assets/footer/instagram-footer.png" alt="instagram-icon">
                 </a>
             </li>
@@ -512,11 +541,20 @@
                 </linearGradient>
             </defs>
         </svg>
-
     </footer>
+      <!-- preloader script -->
+  <script>
+    window.onload = () => {
+      document.body.classList.add('loaded_hiding');
+      window.setTimeout(() => {
+        document.body.classList.add('loaded');
+        document.body.classList.remove('loaded_hiding');
+      }, 1000);
+    }
+  </script>
 
-</body>
 
+    <script type="module" src="./js/app.js"></script>
 </body>
 
 </html>
