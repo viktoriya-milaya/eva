@@ -9,6 +9,8 @@
 @import "comments";
 @import "footer";
 @import "modal";
+@import "alert";
+@import "loader";
 
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,900&display=swap');
@@ -22,6 +24,12 @@ body {
     background: $white;
 
     position: relative;
+}
+
+
+.body_fix {
+    overflow: hidden;
+    padding-right: 17px;
 }
 
 .wrap {
@@ -62,11 +70,11 @@ body {
     line-height: 16px;
 }
 
-.content_light{
+.content_light {
     color: $gray;
 }
 
-.content_big{
+.content_big {
     font-weight: 700;
     margin-bottom: 20px;
 }
@@ -79,13 +87,14 @@ body {
 }
 
 
-.link{
+.link {
     color: inherit;
 }
 
-.link:hover{
-     text-decoration: underline;
+.link:hover {
+    text-decoration: underline;
 }
+
 
 @media (max-width: 1180px) {
 
@@ -108,7 +117,7 @@ body {
     .wrap {
         padding: 0 40px;
     }
-    
+
 }
 
 
@@ -116,9 +125,11 @@ body {
     .wrap {
         padding: 0 20px;
     }
+
     .section {
         padding: 60px 0;
     }
+
     .second-heading {
         padding-bottom: 40px;
         font-size: 20px;

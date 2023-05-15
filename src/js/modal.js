@@ -1,26 +1,20 @@
+import { toggleClass } from './helpers';
 
-const showModal= () => {
+const showForm = () => {
 
+  const body = document.querySelector('body');
+  const modal = document.getElementById('modal');
   const buttons = document.querySelectorAll('.action');
   const buttonClose = document.querySelector('.close');
-  const modal = document.getElementById('modal');
-
-  const addClassVisible = () => 
-    modal.classList.toggle('modal_visible');
 
 
+  const fixWindow = () => {
+    toggleClass(body, 'body_fix');
+    toggleClass(modal, 'modal_visible');
+  };
 
-  buttons.forEach((el) => el.addEventListener('click', addClassVisible));
-
-  buttonClose.addEventListener('click', addClassVisible);
-
-
+  buttons.forEach((el) => el.addEventListener('click', fixWindow));
+  buttonClose.addEventListener('click', fixWindow);
 };
 
-
-export default showModal;
-
-
-  // console.log(modal);
-  // document.body.style.overflow = 'hidden';
-  // document.body.style.paddingRight = '17px';
+export default showForm ;

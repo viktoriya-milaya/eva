@@ -1,2 +1,3 @@
-# Frontend Bundle
-Bundle for frontend development studying for FE-126 group
+final-project FE-126 group
+
+npm start

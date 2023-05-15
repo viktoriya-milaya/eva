@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EVA-коврики Беларусь</title>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="scss/main.scss">
 </head>
 
@@ -13,25 +14,28 @@
 
     <!-- preloader  -->
 
-  <div class="preloader">
-    <svg class="preloader__img" role="img" width="44" height="44" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg"
-      stroke="#fff">
-      <g fill="none" fill-rule="evenodd" stroke-width="2">
-        <circle cx="22" cy="22" r="1">
-          <animate attributeName="r" begin="0s" dur="1.8s" values="1; 20" calcMode="spline" keyTimes="0; 1"
-            keySplines="0.165, 0.84, 0.44, 1" repeatCount="indefinite" />
-          <animate attributeName="stroke-opacity" begin="0s" dur="1.8s" values="1; 0" calcMode="spline" keyTimes="0; 1"
-            keySplines="0.3, 0.61, 0.355, 1" repeatCount="indefinite" />
-        </circle>
-        <circle cx="22" cy="22" r="1">
-          <animate attributeName="r" begin="-0.9s" dur="1.8s" values="1; 20" calcMode="spline" keyTimes="0; 1"
-            keySplines="0.165, 0.84, 0.44, 1" repeatCount="indefinite" />
-          <animate attributeName="stroke-opacity" begin="-0.9s" dur="1.8s" values="1; 0" calcMode="spline"
-            keyTimes="0; 1" keySplines="0.3, 0.61, 0.355, 1" repeatCount="indefinite" />
-        </circle>
-      </g>
-    </svg>
-  </div>
+    <div class="preloader">
+        <svg class="preloader__img" role="img" version="1.1" id="L7" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100"
+            enable-background="new 0 0 100 100" xml:space="preserve">
+            <path fill="#B8005F" d="M31.6,3.5C5.9,13.6-6.6,42.7,3.5,68.4c10.1,25.7,39.2,38.3,64.9,28.1l-3.1-7.9c-21.3,8.4-45.4-2-53.8-23.3
+  c-8.4-21.3,2-45.4,23.3-53.8L31.6,3.5z">
+                <animateTransform attributeName="transform" attributeType="XML" type="rotate" dur="2s" from="0 50 50"
+                    to="360 50 50" repeatCount="indefinite" />
+            </path>
+            <path fill="#B8005F" d="M42.3,39.6c5.7-4.3,13.9-3.1,18.1,2.7c4.3,5.7,3.1,13.9-2.7,18.1l4.1,5.5c8.8-6.5,10.6-19,4.1-27.7
+  c-6.5-8.8-19-10.6-27.7-4.1L42.3,39.6z">
+                <animateTransform attributeName="transform" attributeType="XML" type="rotate" dur="1s" from="0 50 50"
+                    to="-360 50 50" repeatCount="indefinite" />
+            </path>
+            <path fill="#B8005F" d="M82,35.7C74.1,18,53.4,10.1,35.7,18S10.1,46.6,18,64.3l7.6-3.4c-6-13.5,0-29.3,13.5-35.3s29.3,0,35.3,13.5
+  L82,35.7z">
+                <animateTransform attributeName="transform" attributeType="XML" type="rotate" dur="2s" from="0 50 50"
+                    to="360 50 50" repeatCount="indefinite" />
+            </path>
+        </svg>
+
+    </div>
 
 
     <header class="header">
@@ -39,8 +43,8 @@
             <ul class="wrap header-list">
                 <li class="header-list__item">
                     <ul class="phone-list">
-                        <li class="phone-list__item phone-icon"> <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
+                        <li class="phone-list__item phone-icon"> <svg width="16" height="16" viewBox="0 0 16 16"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g clipPath="url(#clip0_1_290)">
                                     <path
                                         d="M0 3.13698C0.0283587 3.00648 0.0510457 2.88166 0.0794045 2.75116C0.170152 2.39939 0.334633 2.08166 0.589862 1.82634C1.05494 1.36109 1.51436 0.895842 1.98511 0.436268C2.37646 0.056126 2.8302 -0.131108 3.36335 0.0958424C3.55051 0.175275 3.73201 0.294424 3.8738 0.436268C4.5771 1.12279 5.26905 1.81499 5.95533 2.51286C6.26161 2.82492 6.46012 3.18804 6.39206 3.64194C6.34101 3.98237 6.1425 4.24336 5.90996 4.48166C5.51861 4.87315 5.12726 5.26464 4.73591 5.65045C4.53173 5.85471 4.53173 5.90577 4.64516 6.16676C5.09323 7.16535 5.77384 7.99371 6.50549 8.78804C7.23715 9.57669 8.03687 10.2859 8.95002 10.859C9.26196 11.0519 9.5966 11.2107 9.91989 11.3866C10.0674 11.4661 10.1808 11.4036 10.2885 11.2958C10.6969 10.8873 11.0939 10.4731 11.5136 10.076C11.6781 9.91712 11.8653 9.7696 12.0695 9.67882C12.4892 9.48591 12.8919 9.57669 13.2549 9.83769C13.3456 9.90577 13.4307 9.9852 13.5158 10.0646C14.1794 10.7228 14.843 11.3753 15.4952 12.0448C15.654 12.2093 15.8015 12.3966 15.8922 12.6008C16.0964 13.0377 16.017 13.4802 15.6994 13.8263C15.1889 14.388 14.6501 14.927 14.1056 15.4547C13.805 15.7441 13.4194 15.8916 13.0053 15.9597C12.9543 15.9653 12.9032 15.9824 12.8579 15.9937C12.6367 15.9937 12.4211 15.9937 12.1999 15.9937C12.1602 15.9824 12.1262 15.971 12.0865 15.9653C11.5931 15.8632 11.0826 15.8008 10.6062 15.6476C9.18256 15.1994 7.89507 14.4675 6.68699 13.6107C4.49202 12.0561 2.73378 10.0987 1.40092 7.76109C0.896136 6.88166 0.48777 5.95683 0.221198 4.97527C0.124778 4.6235 0.0737327 4.26038 0 3.89726C0 3.64762 0 3.3923 0 3.13698Z"
@@ -280,7 +284,7 @@
                 <ul class="products-list">
                     <li class="products-list__item">
                         <p class="title title_pink">Cалон</p>
-                        <img class="products-list__img" src="assets/products/option-1.jpg" alt="eva-коврик" class="img">                      
+                        <img class="products-list__img" src="assets/products/option-1.jpg" alt="eva-коврик" class="img">
                         <p class="title">от 115 BYN</p>
                         <button class="button button_light action">ЗАКАЗАТЬ</button>
                     </li>
@@ -291,14 +295,14 @@
                         <button class="button button_light action">ЗАКАЗАТЬ</button>
                     </li>
                     <li class="products-list__item">
-                        <p class="title title_pink">Салон FULL +</p>
+                        <p class="title title_pink">Салон FULL+</p>
                         <img class="products-list__img" src="assets/products/option-3.png" alt="eva-коврик" class="img">
                         <p class="title">от 210 BYN</p>
                         <button class="button button_light action">ЗАКАЗАТЬ</button>
                     </li>
                 </ul>
 
-                <!-- <button class="button">ПОКАЗАТЬ ЕЩЕ ВАРИАНТЫ</button> -->
+                <!-- <button class="button">ВСЕ ВАРИАНТЫ</button> -->
 
                 <svg class="products__svg" width="757" height="581" viewBox="0 0 757 581" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -336,15 +340,19 @@
             <ul class="comments-list wrap">
                 <li class="comments-list__item">
                     <img src="assets/comments/photo-comment-1.jpg" alt="фото клиента" class="comment-img">
-                    <svg class="comment-img" width="93" height="106" viewBox="0 0 93 106" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M88.6171 24.4949L88.6148 24.4935L49.8802 1.90991C49.8799 1.90973 49.8796 1.90955 49.8793 1.90937C47.786 0.696878 45.214 0.696878 43.1208 1.90937C43.1204 1.90955 43.1201 1.90973 43.1198 1.90991L4.38526 24.4935L4.38295 24.4949C2.29343 25.7056 1 27.9794 1 30.4151V75.585C1 78.0391 2.29223 80.2937 4.38295 81.5051L4.38526 81.5065L43.1198 104.09C43.1203 104.09 43.1207 104.091 43.1212 104.091C45.2142 105.303 47.7858 105.303 49.8789 104.091C49.8793 104.091 49.8798 104.09 49.8802 104.09L88.614 81.507L88.6171 24.4949ZM88.6171 24.4949C90.7078 25.7063 92 27.9609 92 30.4151V75.585M88.6171 24.4949L92 75.585M92 75.585C92 78.0164 90.6903 80.2935 88.6148 81.5065L92 75.585Z" stroke="url(#paint0_linear_1_107)" stroke-width="2"/>
+                    <svg class="comment-img" width="93" height="106" viewBox="0 0 93 106" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M88.6171 24.4949L88.6148 24.4935L49.8802 1.90991C49.8799 1.90973 49.8796 1.90955 49.8793 1.90937C47.786 0.696878 45.214 0.696878 43.1208 1.90937C43.1204 1.90955 43.1201 1.90973 43.1198 1.90991L4.38526 24.4935L4.38295 24.4949C2.29343 25.7056 1 27.9794 1 30.4151V75.585C1 78.0391 2.29223 80.2937 4.38295 81.5051L4.38526 81.5065L43.1198 104.09C43.1203 104.09 43.1207 104.091 43.1212 104.091C45.2142 105.303 47.7858 105.303 49.8789 104.091C49.8793 104.091 49.8798 104.09 49.8802 104.09L88.614 81.507L88.6171 24.4949ZM88.6171 24.4949C90.7078 25.7063 92 27.9609 92 30.4151V75.585M88.6171 24.4949L92 75.585M92 75.585C92 78.0164 90.6903 80.2935 88.6148 81.5065L92 75.585Z"
+                            stroke="url(#paint0_linear_1_107)" stroke-width="2" />
                         <defs>
-                        <linearGradient id="paint0_linear_1_107" x1="6.64286" y1="4.59055" x2="77.7227" y2="108.999" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#D4145A"/>
-                        <stop offset="1" stop-color="#2E3192"/>
-                        </linearGradient>
+                            <linearGradient id="paint0_linear_1_107" x1="6.64286" y1="4.59055" x2="77.7227" y2="108.999"
+                                gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#D4145A" />
+                                <stop offset="1" stop-color="#2E3192" />
+                            </linearGradient>
                         </defs>
-                        </svg>
+                    </svg>
                     <p class="content">Коврики супер!!! Качество на высшем уровне!!!
                         Удачи и побольше заказов вам!!! Большое спасибо!</p>
                     <div class="line"></div>
@@ -352,15 +360,19 @@
                 </li>
                 <li class="comments-list__item">
                     <img src="assets/comments/photo-comment-2.jpg" alt="фото клиента" class="comment-img">
-                    <svg class="comment-img" width="93" height="106" viewBox="0 0 93 106" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M88.6171 24.4949L88.6148 24.4935L49.8802 1.90991C49.8799 1.90973 49.8796 1.90955 49.8793 1.90937C47.786 0.696878 45.214 0.696878 43.1208 1.90937C43.1204 1.90955 43.1201 1.90973 43.1198 1.90991L4.38526 24.4935L4.38295 24.4949C2.29343 25.7056 1 27.9794 1 30.4151V75.585C1 78.0391 2.29223 80.2937 4.38295 81.5051L4.38526 81.5065L43.1198 104.09C43.1203 104.09 43.1207 104.091 43.1212 104.091C45.2142 105.303 47.7858 105.303 49.8789 104.091C49.8793 104.091 49.8798 104.09 49.8802 104.09L88.614 81.507L88.6171 24.4949ZM88.6171 24.4949C90.7078 25.7063 92 27.9609 92 30.4151V75.585M88.6171 24.4949L92 75.585M92 75.585C92 78.0164 90.6903 80.2935 88.6148 81.5065L92 75.585Z" stroke="url(#paint0_linear_1_107)" stroke-width="2"/>
+                    <svg class="comment-img" width="93" height="106" viewBox="0 0 93 106" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M88.6171 24.4949L88.6148 24.4935L49.8802 1.90991C49.8799 1.90973 49.8796 1.90955 49.8793 1.90937C47.786 0.696878 45.214 0.696878 43.1208 1.90937C43.1204 1.90955 43.1201 1.90973 43.1198 1.90991L4.38526 24.4935L4.38295 24.4949C2.29343 25.7056 1 27.9794 1 30.4151V75.585C1 78.0391 2.29223 80.2937 4.38295 81.5051L4.38526 81.5065L43.1198 104.09C43.1203 104.09 43.1207 104.091 43.1212 104.091C45.2142 105.303 47.7858 105.303 49.8789 104.091C49.8793 104.091 49.8798 104.09 49.8802 104.09L88.614 81.507L88.6171 24.4949ZM88.6171 24.4949C90.7078 25.7063 92 27.9609 92 30.4151V75.585M88.6171 24.4949L92 75.585M92 75.585C92 78.0164 90.6903 80.2935 88.6148 81.5065L92 75.585Z"
+                            stroke="url(#paint0_linear_1_107)" stroke-width="2" />
                         <defs>
-                        <linearGradient id="paint0_linear_1_107" x1="6.64286" y1="4.59055" x2="77.7227" y2="108.999" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#D4145A"/>
-                        <stop offset="1" stop-color="#2E3192"/>
-                        </linearGradient>
+                            <linearGradient id="paint0_linear_1_107" x1="6.64286" y1="4.59055" x2="77.7227" y2="108.999"
+                                gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#D4145A" />
+                                <stop offset="1" stop-color="#2E3192" />
+                            </linearGradient>
                         </defs>
-                        </svg>
+                    </svg>
                     <p class="content">Покупала у ребят коврики для Хундай солярис в подарок молодому человеку. Все
                         очень понравилось.</p>
                     <div class="line"></div>
@@ -368,15 +380,19 @@
                 </li>
                 <li class="comments-list__item">
                     <img src="assets/comments/photo-comment-3.jpg" alt="фото клиента" class="comment-img">
-                    <svg class="comment-img" width="93" height="106" viewBox="0 0 93 106" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M88.6171 24.4949L88.6148 24.4935L49.8802 1.90991C49.8799 1.90973 49.8796 1.90955 49.8793 1.90937C47.786 0.696878 45.214 0.696878 43.1208 1.90937C43.1204 1.90955 43.1201 1.90973 43.1198 1.90991L4.38526 24.4935L4.38295 24.4949C2.29343 25.7056 1 27.9794 1 30.4151V75.585C1 78.0391 2.29223 80.2937 4.38295 81.5051L4.38526 81.5065L43.1198 104.09C43.1203 104.09 43.1207 104.091 43.1212 104.091C45.2142 105.303 47.7858 105.303 49.8789 104.091C49.8793 104.091 49.8798 104.09 49.8802 104.09L88.614 81.507L88.6171 24.4949ZM88.6171 24.4949C90.7078 25.7063 92 27.9609 92 30.4151V75.585M88.6171 24.4949L92 75.585M92 75.585C92 78.0164 90.6903 80.2935 88.6148 81.5065L92 75.585Z" stroke="url(#paint0_linear_1_107)" stroke-width="2"/>
+                    <svg class="comment-img" width="93" height="106" viewBox="0 0 93 106" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M88.6171 24.4949L88.6148 24.4935L49.8802 1.90991C49.8799 1.90973 49.8796 1.90955 49.8793 1.90937C47.786 0.696878 45.214 0.696878 43.1208 1.90937C43.1204 1.90955 43.1201 1.90973 43.1198 1.90991L4.38526 24.4935L4.38295 24.4949C2.29343 25.7056 1 27.9794 1 30.4151V75.585C1 78.0391 2.29223 80.2937 4.38295 81.5051L4.38526 81.5065L43.1198 104.09C43.1203 104.09 43.1207 104.091 43.1212 104.091C45.2142 105.303 47.7858 105.303 49.8789 104.091C49.8793 104.091 49.8798 104.09 49.8802 104.09L88.614 81.507L88.6171 24.4949ZM88.6171 24.4949C90.7078 25.7063 92 27.9609 92 30.4151V75.585M88.6171 24.4949L92 75.585M92 75.585C92 78.0164 90.6903 80.2935 88.6148 81.5065L92 75.585Z"
+                            stroke="url(#paint0_linear_1_107)" stroke-width="2" />
                         <defs>
-                        <linearGradient id="paint0_linear_1_107" x1="6.64286" y1="4.59055" x2="77.7227" y2="108.999" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#D4145A"/>
-                        <stop offset="1" stop-color="#2E3192"/>
-                        </linearGradient>
+                            <linearGradient id="paint0_linear_1_107" x1="6.64286" y1="4.59055" x2="77.7227" y2="108.999"
+                                gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#D4145A" />
+                                <stop offset="1" stop-color="#2E3192" />
+                            </linearGradient>
                         </defs>
-                        </svg>
+                    </svg>
                     <p class="content">Спасибо, все приехало, поставил. Результатом доволен, в машине супер!
                         Заказывал
                         на Ниссан.</p>
@@ -384,7 +400,6 @@
                     <p class="content content_light">Николай П.</p>
                 </li>
             </ul>
-
         </section>
 
         <!-- modal -->
@@ -392,56 +407,69 @@
         <div class="modal" id="modal">
             <div class="modal__content">
                 <button class="button button_light close">&#215;</button>
-                <form class="form">
+                <form class="form" action="#" method="get">
                     <p class="heading form-heading">ФОРМА ЗАЯВКИ</p>
                     <div class="row">
-                        <input type="text" required class="input-content" id="name" placeholder="Ваше имя">
-                        <input type="tel" required class="input-content" id="phone" placeholder="+375(XX) XXX XX XX">
+                        <input type="text" class="input-content" id="userName" name="userName" placeholder="Ваше имя">
+                        <input type="tel" class="input-content" id="userPhone" name="userPhone"
+                            placeholder="+375 XX XXXXXXX">
+
+
                     </div>
-                    <div class="row">
-                        <input type="text" required class="input-content input-content_long" id="info"
-                            placeholder="Ваше сообщение (марка автомобиля,пожелания)">
+                    <div class="area">
+                        <textarea placeholder="Ваше сообщение (марка автомобиля, пожелания)" name="userMessage"
+                            id="userInfo" wrap="hard"></textarea>
                     </div>
 
                     <div class="colors">
                         <p class="content content_big">ВАРИАНТЫ РАСЦВЕТКИ</p>
                         <ul class="colors-list">
                             <li class="colors-list__item">
-                                <div class="round round_black"></div>
+                                <div class="square square_black"></div>
                             </li>
                             <li class="colors-list__item">
-                                <div class="round round_white"></div>
+                                <div class="square square_white"></div>
                             </li>
                             <li class="colors-list__item">
-                                <div class="round round_gray"></div>
+                                <div class="square square_gray"></div>
                             </li>
                             <li class="colors-list__item">
-                                <div class="round round_brown"></div>
+                                <div class="square square_brown"></div>
                             </li>
                             <li class="colors-list__item">
-                                <div class="round round_blue"></div>
+                                <div class="square square_blue"></div>
                             </li>
                             <li class="colors-list__item">
-                                <div class="round round_green"></div>
+                                <div class="square square_green"></div>
                             </li>
                             <li class="colors-list__item">
-                                <div class="round round_red"></div>
+                                <div class="square square_red"></div>
                             </li>
                             <li class="colors-list__item">
-                                <div class="round round_yellow"></div>
+                                <div class="square square_yellow"></div>
                             </li>
 
                             <li class="colors-list__item">
-                                <div class="round round_orange"></div>
+                                <div class="square square_orange"></div>
                             </li>
-
                         </ul>
                     </div>
 
                     <div class="row select">
                         <section>
+                            <label class="select-label">Комплектация:</label>
+                            <select class="select-form" id="set">
+                                <option value="set1">Салон</option>
+                                <option value="set2">Салон +</option>
+                                <option value="set3">Салон FULL+</option>
+                                <option value="set4">Свой вариант</option>
+                            </select>
+                        </section>
+
+
+                        <section id="pattern">
                             <label class="select-label">Форма ячеек:</label>
-                            <select class="select-form">
+                            <select class="select-form" id="set-pattern">
                                 <option value="rhombus">Ромб ⬥</option>
                                 <option value="honeycomb">Соты &#11042;</option>
                             </select>
@@ -449,7 +477,7 @@
 
                         <section>
                             <label class="select-label">Цвет изделия:</label>
-                            <select class="select-color">
+                            <select class="select-color" id="color-pattern">
                                 <option value="black">Черный</option>
                                 <option value="white">Белый</option>
                                 <option value="red">Красный</option>
@@ -465,7 +493,7 @@
 
                         <section>
                             <label class="select-label">Цвет окантовки:</label>
-                            <select class="select-color">
+                            <select class="select-color" id="color-edging">
                                 <option value="black">Черный</option>
                                 <option value="white">Белый</option>
                                 <option value="red">Красный</option>
@@ -481,9 +509,16 @@
                     </div>
                     <button type="submit" class="button" id="submit">ОТПРАВИТЬ</button>
                 </form>
-
+            </div>
+            <div class="modal alert">
+                <div class="alert__content">
+                    <p class="title" id="alert-message"></p>
+                    <button class="button button_light" id="alert-btn">OK</button>
+                </div>
             </div>
         </div>
+        </div>
+
     </main>
 
     <!-- footer  -->
@@ -542,17 +577,16 @@
             </defs>
         </svg>
     </footer>
-      <!-- preloader script -->
-  <script>
-    window.onload = () => {
-      document.body.classList.add('loaded_hiding');
-      window.setTimeout(() => {
-        document.body.classList.add('loaded');
-        document.body.classList.remove('loaded_hiding');
-      }, 1000);
-    }
-  </script>
-
+    <!-- preloader script -->
+    <script>
+        window.onload = () => {
+            document.body.classList.add('loaded_hiding');
+            window.setTimeout(() => {
+                document.body.classList.add('loaded');
+                document.body.classList.remove('loaded_hiding');
+            }, 2000);
+        }
+    </script>
 
     <script type="module" src="./js/app.js"></script>
 </body>
