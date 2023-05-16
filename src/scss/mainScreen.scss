@@ -7,17 +7,6 @@
     &__offer {
         padding: 130px 0;
 
-        .first-heading {
-            max-width: 600px;
-            font-size: 50px;
-            line-height: 59px;
-        }
-
-        .brief {
-            font-size: 24px;
-            line-height: 28px;
-            padding: 10px 0 20px;
-        }
     }
 
     &__img {
@@ -36,6 +25,18 @@
         top: 87px;
         left: -20px;
     }
+
+    .first-heading {
+        max-width: 600px;
+        font-size: 50px;
+        line-height: 59px;
+    }
+
+    .brief {
+        font-size: 24px;
+        line-height: 28px;
+        padding: 10px 0 20px;
+    }
 }
 
 @media (max-width: 1180px) {
@@ -53,18 +54,18 @@
 @media (max-width: 1020px) {
 
     .main-screen {
-        &__offer {
-            .first-heading {
-                max-width: 300px;
-                font-size: 40px;
-                line-height: 40px;
-            }
+        .first-heading {
+            max-width: 300px;
+            font-size: 40px;
+            line-height: 40px;
         }
 
         &__img {
             transform: scale(0.9) translateX(-60px);
         }
+
     }
+
 
 }
 
@@ -82,18 +83,20 @@
 @media (max-width: 770px) {
 
     .main-screen {
+
+        .first-heading {
+            max-width: 360px;
+            font-size: 36px;
+            line-height: 36px;
+            text-align: center;
+        }
+
         &__offer {
             padding: 0;
             display: flex;
             flex-direction: column;
             align-items: center;
 
-            .first-heading {
-                max-width: 360px;
-                font-size: 36px;
-                line-height: 36px;
-                text-align: center;
-            }
         }
 
         .main-img,
@@ -105,7 +108,6 @@
             transform: scale(0.7);
         }
     }
-
 }
 
 
@@ -113,14 +115,12 @@
 @media (max-width: 560px) {
 
     .main-screen {
-        &__offer {
-            .first-heading {
-                max-width: 200px;
-                font-size: 25px;
-                line-height: 25px;
-                padding: 0;
 
-            }
+        .first-heading {
+            max-width: 200px;
+            font-size: 25px;
+            line-height: 25px;
+            padding: 0;
         }
 
         .main-img,

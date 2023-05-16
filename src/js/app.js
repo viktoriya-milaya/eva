@@ -4,6 +4,9 @@ import showMobileMenu from './mobile';
 import showForm  from './modal';
 import sendRequest from './form';
 
+// import createProductsList from './products';
+
+
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -11,4 +14,6 @@ document.addEventListener('DOMContentLoaded', () => {
   showMobileMenu();
   showForm ();
   sendRequest();
+
+  // createProductsList();
 });
