@@ -25,7 +25,7 @@ const sendRequest = () => {
   const EMPTY = `` && ` `;
 
   // пример JSON отправки на сервер
-  const data = JSON.stringify({
+  const data = {
     "name": userName.value,
     "phone": userPhone.value,
     "info": userInfo.value,
@@ -33,7 +33,7 @@ const sendRequest = () => {
     "pattern": pattern.value,
     "color": colorPattern.value,
     "edging": colorEdging.value
-  });
+  };
 
 
   async function showAlertSuccess() {
