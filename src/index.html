@@ -285,27 +285,27 @@
             <div class="section products">
                 <h2 class="heading second-heading">Мы предлагаем Вам</h2>
                 <ul class="products-list">
-                    <li class="products-list__item">
-                        <p class="title title_pink">Cалон</p>
-                        <img class="products-list__img" src="assets/products/option-1.jpg" alt="eva-коврик" class="img">
+                    <li class="products-list__item" id="set1">
+                        <p class="title title_pink">SALON</p>
+                        <img class="products-list__img img" src="assets/products/option-1.jpg" alt="eva-коврик">
                         <p class="title">от 115 BYN</p>
                         <button class="button button_light action">ЗАКАЗАТЬ</button>
                     </li>
-                    <li class="products-list__item">
-                        <p class="title title_pink">Cалон + </p>
-                        <img class="products-list__img" src="assets/products/option-2.png" alt="eva-коврик" class="img">
+                    <li class="products-list__item" id="set2">
+                        <p class="title title_pink">SALON + </p>
+                        <img class="products-list__img img" src="assets/products/option-2.png" alt="eva-коврик">
                         <p class="title">от 125 BYN</p>
                         <button class="button button_light action">ЗАКАЗАТЬ</button>
                     </li>
-                    <li class="products-list__item">
-                        <p class="title title_pink">Салон FULL+</p>
-                        <img class="products-list__img" src="assets/products/option-3.png" alt="eva-коврик" class="img">
+                    <li class="products-list__item" id="set3">
+                        <p class="title title_pink">FULL</p>
+                        <img class="products-list__img img" src="assets/products/option-3.png" alt="eva-коврик">
                         <p class="title">от 210 BYN</p>
                         <button class="button button_light action">ЗАКАЗАТЬ</button>
                     </li>
                 </ul>
 
-                <!-- <button class="button" id="load-more">ВСЕ ВАРИАНТЫ</button> -->
+                <button class="button" id="load-more">ВСЕ ВАРИАНТЫ</button>
 
                 <svg class="products__svg" width="757" height="581" viewBox="0 0 757 581" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -340,71 +340,76 @@
         </section>
 
         <!--comments -->
+
         <section class="comments" id="comments">
-            <ul class="comments-list wrap">
-                <li class="comments-list__item">
-                    <img src="assets/comments/photo-comment-1.jpg" alt="фото клиента" class="comment-img">
-                    <svg class="comment-img" width="93" height="106" viewBox="0 0 93 106" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M88.6171 24.4949L88.6148 24.4935L49.8802 1.90991C49.8799 1.90973 49.8796 1.90955 49.8793 1.90937C47.786 0.696878 45.214 0.696878 43.1208 1.90937C43.1204 1.90955 43.1201 1.90973 43.1198 1.90991L4.38526 24.4935L4.38295 24.4949C2.29343 25.7056 1 27.9794 1 30.4151V75.585C1 78.0391 2.29223 80.2937 4.38295 81.5051L4.38526 81.5065L43.1198 104.09C43.1203 104.09 43.1207 104.091 43.1212 104.091C45.2142 105.303 47.7858 105.303 49.8789 104.091C49.8793 104.091 49.8798 104.09 49.8802 104.09L88.614 81.507L88.6171 24.4949ZM88.6171 24.4949C90.7078 25.7063 92 27.9609 92 30.4151V75.585M88.6171 24.4949L92 75.585M92 75.585C92 78.0164 90.6903 80.2935 88.6148 81.5065L92 75.585Z"
-                            stroke="url(#paint0_linear_1_107)" stroke-width="2" />
-                        <defs>
-                            <linearGradient id="paint0_linear_1_107" x1="6.64286" y1="4.59055" x2="77.7227" y2="108.999"
-                                gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#D4145A" />
-                                <stop offset="1" stop-color="#2E3192" />
-                            </linearGradient>
-                        </defs>
-                    </svg>
-                    <p class="content">Коврики супер!!! Качество на высшем уровне!!!
-                        Удачи и побольше заказов вам!!! Большое спасибо!</p>
-                    <div class="line"></div>
-                    <p class="content content_light">Константин В.</p>
-                </li>
-                <li class="comments-list__item">
-                    <img src="assets/comments/photo-comment-2.jpg" alt="фото клиента" class="comment-img">
-                    <svg class="comment-img" width="93" height="106" viewBox="0 0 93 106" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M88.6171 24.4949L88.6148 24.4935L49.8802 1.90991C49.8799 1.90973 49.8796 1.90955 49.8793 1.90937C47.786 0.696878 45.214 0.696878 43.1208 1.90937C43.1204 1.90955 43.1201 1.90973 43.1198 1.90991L4.38526 24.4935L4.38295 24.4949C2.29343 25.7056 1 27.9794 1 30.4151V75.585C1 78.0391 2.29223 80.2937 4.38295 81.5051L4.38526 81.5065L43.1198 104.09C43.1203 104.09 43.1207 104.091 43.1212 104.091C45.2142 105.303 47.7858 105.303 49.8789 104.091C49.8793 104.091 49.8798 104.09 49.8802 104.09L88.614 81.507L88.6171 24.4949ZM88.6171 24.4949C90.7078 25.7063 92 27.9609 92 30.4151V75.585M88.6171 24.4949L92 75.585M92 75.585C92 78.0164 90.6903 80.2935 88.6148 81.5065L92 75.585Z"
-                            stroke="url(#paint0_linear_1_107)" stroke-width="2" />
-                        <defs>
-                            <linearGradient id="paint0_linear_1_107" x1="6.64286" y1="4.59055" x2="77.7227" y2="108.999"
-                                gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#D4145A" />
-                                <stop offset="1" stop-color="#2E3192" />
-                            </linearGradient>
-                        </defs>
-                    </svg>
-                    <p class="content">Покупала у ребят коврики для Хундай солярис в подарок молодому человеку. Все
-                        очень понравилось.</p>
-                    <div class="line"></div>
-                    <p class="content content_light">Вера К.</p>
-                </li>
-                <li class="comments-list__item">
-                    <img src="assets/comments/photo-comment-3.jpg" alt="фото клиента" class="comment-img">
-                    <svg class="comment-img" width="93" height="106" viewBox="0 0 93 106" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M88.6171 24.4949L88.6148 24.4935L49.8802 1.90991C49.8799 1.90973 49.8796 1.90955 49.8793 1.90937C47.786 0.696878 45.214 0.696878 43.1208 1.90937C43.1204 1.90955 43.1201 1.90973 43.1198 1.90991L4.38526 24.4935L4.38295 24.4949C2.29343 25.7056 1 27.9794 1 30.4151V75.585C1 78.0391 2.29223 80.2937 4.38295 81.5051L4.38526 81.5065L43.1198 104.09C43.1203 104.09 43.1207 104.091 43.1212 104.091C45.2142 105.303 47.7858 105.303 49.8789 104.091C49.8793 104.091 49.8798 104.09 49.8802 104.09L88.614 81.507L88.6171 24.4949ZM88.6171 24.4949C90.7078 25.7063 92 27.9609 92 30.4151V75.585M88.6171 24.4949L92 75.585M92 75.585C92 78.0164 90.6903 80.2935 88.6148 81.5065L92 75.585Z"
-                            stroke="url(#paint0_linear_1_107)" stroke-width="2" />
-                        <defs>
-                            <linearGradient id="paint0_linear_1_107" x1="6.64286" y1="4.59055" x2="77.7227" y2="108.999"
-                                gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#D4145A" />
-                                <stop offset="1" stop-color="#2E3192" />
-                            </linearGradient>
-                        </defs>
-                    </svg>
-                    <p class="content">Спасибо, все приехало, поставил. Результатом доволен, в машине супер!
-                        Заказывал
-                        на Ниссан.</p>
-                    <div class="line"></div>
-                    <p class="content content_light">Николай П.</p>
-                </li>
-            </ul>
-        </section>
+            <div>
+
+                <ul class="comments-list ">
+                    <li class="comments-list__item">
+                        <img src="assets/comments/photo-comment-1.jpg" alt="фото клиента" class="comment-img">
+                        <svg class="comment-img" width="93" height="106" viewBox="0 0 93 106" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M88.6171 24.4949L88.6148 24.4935L49.8802 1.90991C49.8799 1.90973 49.8796 1.90955 49.8793 1.90937C47.786 0.696878 45.214 0.696878 43.1208 1.90937C43.1204 1.90955 43.1201 1.90973 43.1198 1.90991L4.38526 24.4935L4.38295 24.4949C2.29343 25.7056 1 27.9794 1 30.4151V75.585C1 78.0391 2.29223 80.2937 4.38295 81.5051L4.38526 81.5065L43.1198 104.09C43.1203 104.09 43.1207 104.091 43.1212 104.091C45.2142 105.303 47.7858 105.303 49.8789 104.091C49.8793 104.091 49.8798 104.09 49.8802 104.09L88.614 81.507L88.6171 24.4949ZM88.6171 24.4949C90.7078 25.7063 92 27.9609 92 30.4151V75.585M88.6171 24.4949L92 75.585M92 75.585C92 78.0164 90.6903 80.2935 88.6148 81.5065L92 75.585Z"
+                                stroke="url(#paint0_linear_1_107)" stroke-width="2" />
+                            <defs>
+                                <linearGradient id="paint0_linear_1_107" x1="6.64286" y1="4.59055" x2="77.7227"
+                                    y2="108.999" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#D4145A" />
+                                    <stop offset="1" stop-color="#2E3192" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <p class="content">Коврики супер!!! Качество на высшем уровне!!!
+                            Удачи и побольше заказов вам!!! Большое спасибо!</p>
+                        <div class="line"></div>
+                        <p class="content content_light">Константин В.</p>
+                    </li>
+                    <li class="comments-list__item ">
+                        <img src="assets/comments/photo-comment-2.jpg" alt="фото клиента" class="comment-img">
+                        <svg class="comment-img" width="93" height="106" viewBox="0 0 93 106" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M88.6171 24.4949L88.6148 24.4935L49.8802 1.90991C49.8799 1.90973 49.8796 1.90955 49.8793 1.90937C47.786 0.696878 45.214 0.696878 43.1208 1.90937C43.1204 1.90955 43.1201 1.90973 43.1198 1.90991L4.38526 24.4935L4.38295 24.4949C2.29343 25.7056 1 27.9794 1 30.4151V75.585C1 78.0391 2.29223 80.2937 4.38295 81.5051L4.38526 81.5065L43.1198 104.09C43.1203 104.09 43.1207 104.091 43.1212 104.091C45.2142 105.303 47.7858 105.303 49.8789 104.091C49.8793 104.091 49.8798 104.09 49.8802 104.09L88.614 81.507L88.6171 24.4949ZM88.6171 24.4949C90.7078 25.7063 92 27.9609 92 30.4151V75.585M88.6171 24.4949L92 75.585M92 75.585C92 78.0164 90.6903 80.2935 88.6148 81.5065L92 75.585Z"
+                                stroke="url(#paint0_linear_1_107)" stroke-width="2" />
+                            <defs>
+                                <linearGradient id="paint0_linear_1_107" x1="6.64286" y1="4.59055" x2="77.7227"
+                                    y2="108.999" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#D4145A" />
+                                    <stop offset="1" stop-color="#2E3192" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <p class="content">Покупала у ребят коврики для Хундай солярис в подарок молодому человеку. Все
+                            очень понравилось.</p>
+                        <div class="line"></div>
+                        <p class="content content_light">Вера К.</p>
+                    </li>
+                    <li class="comments-list__item">
+                        <img src="assets/comments/photo-comment-3.jpg" alt="фото клиента" class="comment-img">
+                        <svg class="comment-img" width="93" height="106" viewBox="0 0 93 106" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M88.6171 24.4949L88.6148 24.4935L49.8802 1.90991C49.8799 1.90973 49.8796 1.90955 49.8793 1.90937C47.786 0.696878 45.214 0.696878 43.1208 1.90937C43.1204 1.90955 43.1201 1.90973 43.1198 1.90991L4.38526 24.4935L4.38295 24.4949C2.29343 25.7056 1 27.9794 1 30.4151V75.585C1 78.0391 2.29223 80.2937 4.38295 81.5051L4.38526 81.5065L43.1198 104.09C43.1203 104.09 43.1207 104.091 43.1212 104.091C45.2142 105.303 47.7858 105.303 49.8789 104.091C49.8793 104.091 49.8798 104.09 49.8802 104.09L88.614 81.507L88.6171 24.4949ZM88.6171 24.4949C90.7078 25.7063 92 27.9609 92 30.4151V75.585M88.6171 24.4949L92 75.585M92 75.585C92 78.0164 90.6903 80.2935 88.6148 81.5065L92 75.585Z"
+                                stroke="url(#paint0_linear_1_107)" stroke-width="2" />
+                            <defs>
+                                <linearGradient id="paint0_linear_1_107" x1="6.64286" y1="4.59055" x2="77.7227"
+                                    y2="108.999" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#D4145A" />
+                                    <stop offset="1" stop-color="#2E3192" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <p class="content">Спасибо, все приехало, поставил. Результатом доволен, в машине супер!
+                            Заказывал
+                            на Ниссан.</p>
+                        <div class="line"></div>
+                        <p class="content content_light">Николай П.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+      </div>
 
         <!-- modal -->
         <div class="modal" id="modal">

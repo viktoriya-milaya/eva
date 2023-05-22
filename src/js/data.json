@@ -1,0 +1,23 @@
+
+[
+       {
+        "id": "set4",
+        "title": "TRUNK",
+        "price": 90,
+        "src": "https://evabar.by/img/coin/coin2.png"
+    },
+
+    {
+        "id": "set5",
+        "title": "SINGLETON",
+        "price": 40,
+        "src": "https://evabar.by/img/coin/coin1.png"
+    },
+
+    {
+        "id": "set6",
+        "title": "PERSONAL",
+        "price": 50,
+        "src": "https://autokovrik1.ru/wp-content/uploads/2021/09/evafoto2-1.jpg"
+    }
+]

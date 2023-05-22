@@ -16,6 +16,11 @@
     transition: all 0.2s ease-out 0.1s;
 }
 
+.button:disabled {
+    color: $white;
+    background: $light-gray;
+}
+
 
 .button_light{
     background: none;

@@ -3,14 +3,14 @@
 .comments {
     padding: 100px 0 70px;
     background: $section-gradient;
-    display: flex;
-    justify-content: space-between;
+    // display: flex;
+    // justify-content: space-between;
 
     .comments-list {
         display: flex;
-        justify-content: space-between;
+        // justify-content: space-between;
         align-items: start;
-        gap: 70px;
+        gap: 30px;
 
 
         &__item {
@@ -19,21 +19,24 @@
             justify-content: center;
             align-items: center;
             padding: 80px 45px 43px;
-            max-width: 344px;
+            max-width: 700px;
             background: $white;
             border-radius: 9px;
             box-shadow: 0px 0px 40px rgba(184, 0, 95, 0.2);
             position: relative;
+            flex: 0 0 calc(33.33% - (60px / 3));
 
 
-            .comment-img{
+
+
+            .comment-img {
                 position: absolute;
                 top: -53px;
 
             }
 
             .content {
-             text-align: center;
+                text-align: center;
             }
 
 
@@ -47,28 +50,146 @@
     }
 }
 
+.slider__dot {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    // margin: 30px 0;
+}
+
+
+.dot {
+    width: 36px;
+    height: 1px;
+    padding: 1px;
+    border: inherit 1px solid;
+    background: none;
+    cursor: pointer;
+}
+
+
+.dot_active {
+    background-color: #6600cc;
+    box-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 40px #6600cc;
+
+}
+
+
+.dot:hover {
+    box-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 40px #6600cc;
+}
+
+
 @media (max-width: 1020px) {
 
+    .dot {
+        width: 24px;
+    }
+
     .comments {
-       
+
         .comments-list {
             flex-direction: column;
             align-items: center;
             gap: 110px;
-    
-    
+
+
             &__item {
                 max-width: 534px;
                 width: 100%;
-    
+
                 .content {
-                 text-align: center;
+                    text-align: center;
                 }
-        
+
                 .line {
                     margin: 25px 0 9px;
                 }
             }
         }
     }
+
+
+
 }
+
+
+
+
+// элементы слайдера (const)
+
+// const sliderBar = document.querySelector('.slider-list');
+// const sliderImges = document.querySelectorAll('.slider-list__img');
+
+// const sliderBtnNext = document.getElementById('slider__btn_next');
+// const sliderBtnPrev = document.getElementById('slider__btn_prev');
+
+// const sliderDots = document.querySelectorAll('.dot');
+
+
+// // счетчик слайдеров и видимвя часть слайда (let)
+
+// let sliderCount = 0;
+// let sliderWidth;
+
+// const showSlider = () => {
+//     sliderWidth = document.querySelector('.slider').offsetWidth;
+//     sliderBar.style.width = sliderWidth * sliderImges.length + 'px';
+//     sliderImges.forEach(item => item.style.width = sliderWidth + 'px');
+
+//     scrollSlider();
+// };
+
+
+// // адаптив под размер окна
+
+// window.addEventListener('resize', showSlider);
+
+// const showNextSlide = () => {
+//     sliderCount++;
+//     if (sliderCount >= sliderImges.length) sliderCount = 0;
+
+//     scrollSlider();
+//     activeSlide(sliderCount);
+// };
+
+// const showPrevSlide = () => {
+//     sliderCount--;
+//     if (sliderCount < 0) sliderCount = (sliderImges.length - 1);
+
+//     scrollSlider();
+//     activeSlide(sliderCount);
+// };
+
+// // перемещения слайдов
+
+// const scrollSlider = () => {
+//     sliderBar.style.transform = `translateX(${-sliderCount * sliderWidth}px)`;
+// };
+
+// const activeSlide = index => {
+//     sliderDots.forEach(item => item.classList.remove('dot_active'));
+//     sliderDots[index].classList.add('dot_active');
+// };
+
+// setInterval(() => {
+//     showNextSlide()
+// }, 5000);
+
+
+// // кнопки переключениz слайдов
+
+// sliderBtnNext.addEventListener('click', showNextSlide);
+// sliderBtnPrev.addEventListener('click', showPrevSlide);
+
+
+// sliderDots.forEach((dot, index) => {
+//     dot.addEventListener('click', () => {
+//         sliderCount = index;
+//         scrollSlider();
+//         activeSlide(sliderCount);
+//     })
+// });
+
+// export default showSlider; 
