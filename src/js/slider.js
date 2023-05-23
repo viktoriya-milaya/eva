@@ -1,4 +1,3 @@
-// элементы слайдера (const)
 
 const sliderBar = document.querySelector('.slider-list');
 const sliderImges = document.querySelectorAll('.slider-list__img');
@@ -8,8 +7,6 @@ const sliderBtnPrev = document.getElementById('slider__btn_prev');
 
 const sliderDots = document.querySelectorAll('.dot');
 
-
-// счетчик слайдеров и видимвя часть слайда (let)
 
 let sliderCount = 0;
 let sliderWidth;
@@ -21,9 +18,6 @@ const showSlider = () => {
 
     scrollSlider();
 };
-
-
-// адаптив под размер окна
 
 window.addEventListener('resize', showSlider);
 
@@ -43,7 +37,6 @@ const showPrevSlide = () => {
     activeSlide(sliderCount);
 };
 
-// перемещения слайдов
 
 const scrollSlider = () => {
     sliderBar.style.transform = `translateX(${-sliderCount * sliderWidth}px)`;
@@ -58,8 +51,6 @@ setInterval(() => {
     showNextSlide()
 }, 5000);
 
-
-// кнопки переключениz слайдов
 
 sliderBtnNext.addEventListener('click', showNextSlide);
 sliderBtnPrev.addEventListener('click', showPrevSlide);
