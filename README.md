@@ -1,4 +1,5 @@
-FE-126 group
-final-project 
+FE-126 group 
+финальный выпускнй проект 
+
 
 npm start
